@@ -53,7 +53,7 @@ submitButton.addEventListener("click", (e) => {
         } 
         if ( checkPass ) { 
             clog("🔔 Validity check pass!")
-            submitButton.textContent = "✅ All checks pass!"
+            submitButton.textContent = "✅ All checks passed!"
         }
     })
     

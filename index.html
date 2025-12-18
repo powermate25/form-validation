@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>Browser Form (Validity check)</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+
+    <body>
+        <div class="doc-title">
+            <h1>Form validation </h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" /></svg>
+        </div>
+        
+        <form action="" method="post" novalidate>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" placeholder="Your email" required>
+            </p>
+            <p>
+                <label for="country">Country</label>
+                <input type="text" id="country" name="user_country" placeholder="Your country" required>
+            </p>
+            <p>
+                <label for="postcode">Postal code</label>
+                <input type="text" id="postcode" name="user_postcode" placeholder="Zip code" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="user_password" placeholder="Your password" minlength="8" required>
+            </p>
+            <p>
+                <label for="password-check">Confirm password</label>
+                <input type="password" id="password-check" name="user_password-check" placeholder="Confirm your password" minlength="8" required>
+            </p>
+            <p>
+                <button id="submit-button" type="submit">Submit</button>
+            </p>
+        </form>
+    </body>
+</html>

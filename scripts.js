@@ -48,7 +48,7 @@ submitButton.addEventListener("click", (e) => {
         }
         // Checking all input fields validities
         let checkPass = true
-        for (let x = 1; x < allInputElements.length; x++){
+        for (let x = 1; x <= allInputElements.length; x++){
             if ( !i.checkValidity() ) { checkPass = false }
         } 
         if ( checkPass ) { 
